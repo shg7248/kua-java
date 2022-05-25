@@ -1,0 +1,13 @@
+
+class Calculator {
+	
+	// 두 수의 덧셈을 리턴하는 add 메서드 정의
+}
+
+public class Ex05_04_메서드 {
+	public static void main(String[] args) throws Exception {
+		
+		
+		
+	}
+}

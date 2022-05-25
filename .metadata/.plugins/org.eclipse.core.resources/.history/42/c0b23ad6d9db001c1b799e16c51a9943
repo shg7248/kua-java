@@ -1,0 +1,24 @@
+
+class Person {
+	String name;
+	int age;
+	String addr;
+}
+
+class Employee extends Person {
+
+	String company;
+	String title;
+} // Employee
+
+class Student extends Person {
+
+	String school;
+	int kor;
+} // Student
+
+public class Ex06_02_상속 {
+	public static void main(String[] args) {
+		
+	}
+}

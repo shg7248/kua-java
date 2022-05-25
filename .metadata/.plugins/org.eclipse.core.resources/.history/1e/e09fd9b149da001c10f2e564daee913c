@@ -1,0 +1,19 @@
+
+class Student {
+	
+	int kor;
+	int eng;
+	int math;
+	
+}
+
+public class Ex05_05_메서드 {
+	public static void main(String[] args) throws Exception { // 정의
+		
+		int kor, eng, m;
+		
+		Student s = null;
+		s = new Student();
+		
+	}
+}

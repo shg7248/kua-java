@@ -1,0 +1,8 @@
+
+public class Ex05_12_overloading {
+	public static void main(String[] args) throws Exception { // 정의
+
+		plus(3, 5, 10);
+		
+	}
+}

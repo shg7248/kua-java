@@ -1,0 +1,27 @@
+package com.cos.reflect.controller;
+
+import com.cos.reflect.anno.RequestMapping;
+import com.cos.reflect.dto.JoinDto;
+
+public class UserController {
+	
+	@RequestMapping("/join")
+	public String join(JoinDto dto) { // username, password, email
+		return "/";
+	}
+	
+	@RequestMapping("/login")
+	public String login() { // username, password
+		return "/";
+	}
+	
+	@RequestMapping("/user")
+	public String user() {
+		return "/";
+	}
+	
+	@RequestMapping("/hello")
+	public String hello() {
+		return "/";
+	}
+}

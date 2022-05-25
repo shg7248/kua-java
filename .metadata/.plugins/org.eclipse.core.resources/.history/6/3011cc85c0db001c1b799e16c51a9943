@@ -1,0 +1,7 @@
+package com.cos.song.gwan;
+
+import com.cos.song.hack.Song;
+
+public class Hak {
+	Song song = new Song();
+}

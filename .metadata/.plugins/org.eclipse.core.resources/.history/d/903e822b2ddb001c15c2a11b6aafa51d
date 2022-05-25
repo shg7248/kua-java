@@ -1,0 +1,22 @@
+
+class Stu {
+	String name;
+	int kor;
+	int eng;
+	
+	Stu() { // default 생성자
+		
+	}
+}
+
+public class Ex05_17_객체배열 {
+	public static void main(String[] args) {
+		
+		int[] arr = {10, 20, 30};
+		
+		Stu s1 = new Stu();
+		Stu s2 = new Stu();
+		Stu s3 = new Stu();
+		
+	}
+}

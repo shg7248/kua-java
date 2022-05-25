@@ -1,0 +1,16 @@
+
+public class Ex03_07_송학관3 {
+	public static void main(String[] args) {
+		
+		int i;
+		int sum=0;
+		for(i=0;i<100;i++) {
+			if(i/10==0) {
+				sum+=i;
+				if(i==10)
+					System.out.println(sum);
+			}
+		}
+			
+	}
+}

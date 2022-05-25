@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class MergeSort {
+	
+	public static int[] mergeSort(int[] arr) {
+		
+		int leng = arr.length;
+		if(leng <= 1)
+			return arr;
+		int divide = leng / 2;
+		
+		int[] left = Arrays.copyOfRange(arr, 0, divide);
+		int[] right = Arrays.copyOfRange(arr, divide, leng);
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		int[] arr = {27,10,12,20,25,13,15,22};
+		System.out.println(arr[arr.length-1]);
+//		MergeSort.mergeSort(arr);
+	}
+}

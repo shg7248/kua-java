@@ -1,0 +1,10 @@
+
+public class Ex05_10_송학관 {
+	public static void main(String[] args) throws Exception { // 정의
+	
+		Scanner sc = new Scanner(System.in);
+		// 정수 2개 입력
+		int a, b;
+		
+	}
+}

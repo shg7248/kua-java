@@ -1,0 +1,12 @@
+
+public class Ex05_16_송학관 {
+	public static void main(String[] args) {
+		Book b1 = new Book();
+		b1.show();
+		
+		System.out.println("=========================");
+		
+		Book b2 = new Book("HTML", "아이유", 3000);
+		b2.show();
+	}
+}

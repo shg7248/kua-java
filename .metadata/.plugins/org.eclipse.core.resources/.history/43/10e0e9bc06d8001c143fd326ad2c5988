@@ -1,0 +1,22 @@
+class Person {
+	String name;
+	int age;
+	double height;
+	
+}
+
+public class Ex05_01_클래스 {
+	public static void main(String[] args) {
+		
+//		String name="아이유";
+//		int a = 10;
+//		double b = 12.34;
+//		char c = 'X';
+		Person p1 = new Person(); // p1은 참조변수 .. 저장공간은 따로 만들어지고 참조변수에 그 저장공간의 주소가 저장되는 것
+	}
+}
+
+/*
+ * 		클래스 : 사용자 정의 자료형 (사용자가 만들어 쓰는 자료형)
+ * 
+ */

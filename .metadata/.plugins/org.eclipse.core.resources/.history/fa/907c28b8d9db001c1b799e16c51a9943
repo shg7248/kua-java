@@ -1,0 +1,22 @@
+
+class Employee {
+	String name;
+	int age;
+	String addr;
+	String company;
+	String title;
+} // Employee
+
+class Student {
+	String name;
+	int age;
+	String addr;
+	String school;
+	int kor;
+}
+
+public class Ex06_02_상속 {
+	public static void main(String[] args) {
+		
+	}
+}

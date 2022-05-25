@@ -1,0 +1,43 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Java_shg\.metadata\.plugins\org.eclipse.core.resources\.projects\PythonP\com.python.pydev.analysis\v2_indexcache
+중복문자제거|1652785386286713000|C:\Java_shg\PythonP\중복문자제거.py
+dict_ex|1652855161482496000|C:\Java_shg\PythonP\dict_ex.py
+스택을_이용한_큐_구현|1652922351342408000|C:\Java_shg\PythonP\스택을_이용한_큐_구현.py
+일일온도|1652870936939483000|C:\Java_shg\PythonP\일일온도.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+3=C:\Java_shg\PythonP\dict_ex.py
+7=C:\Java_shg\PythonP\중복문자제거.py
+5=C:\Java_shg\PythonP\스택을_이용한_큐_구현.py
+9=MyQueue
+8=중복문자제거
+10=MyQueue.__init__
+1=C:\Java_shg\PythonP\일일온도.py
+4=dict_ex
+6=스택을_이용한_큐_구현
+2=일일온도
+-- END DICTIONARY
+-- START TREE 1
+9
+T|1|T!1^9#1*19@
+dai|1|dailyTemperatures!1^14#5*18@
+int|1|int_dict!3^9#1*35@
+myq|1|MyQueue!5^20#7*49@
+qu|1|qu!5^13#1*51@
+rem|1|removeDuplicateLetters!7^11#5*66@
+res|2|result!1^30#1*19@result!7^23#1*67@
+sta|1|stack!7^26#1*67@
+str|1|str!7^9#1*67@
+-- END TREE
+-- START TREE 2
+7
+__i|1|__init__!9&5^21#9*50@
+emp|1|empty!9&5^39#9*50@
+inp|1|input!10&5^22#9*51@
+out|1|output!10&5^23#9*51@
+pee|1|peek!9&5^32#9*50@
+pop|1|pop!9&5^28#9*50@
+pus|1|push!9&5^25#9*50@
+-- END TREE

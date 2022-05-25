@@ -1,0 +1,8 @@
+
+public class Ex02_05_삼항 {
+	public static void main(String[] args) {
+	
+		// 조건문 ? 참일때 : 거짓일때
+		
+	}
+}

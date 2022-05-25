@@ -1,0 +1,36 @@
+
+class Person {
+	String name;
+	int age;
+	String addr;
+	
+	Person() {
+		super();
+	}
+}
+
+class Employee extends Person {
+
+	String company;
+	String title;
+	
+	Employee() {
+		super();
+	}
+} // Employee
+
+class Student extends Person {
+
+	String school;
+	int kor;
+	
+	Student() {
+		super();
+	}
+} // Student
+
+public class Ex06_02_상속 {
+	public static void main(String[] args) {
+		
+	}
+}

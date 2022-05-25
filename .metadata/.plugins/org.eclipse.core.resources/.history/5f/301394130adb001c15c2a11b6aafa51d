@@ -1,0 +1,58 @@
+
+class Book { // 내가 만들어 쓰는 자료형
+	private String title; // private : 다른 클래스에선 보이지 않음
+	String author;
+	int price;
+	
+	void setTitle(String t) {
+		title = t;
+	}
+	
+	String getTitle() {
+		return title;
+	}
+	
+	void setAuthor(String a) {
+		author = a;
+	}
+	
+	String getAuthor() {
+		return author;
+	}
+	
+	void setPrice(int p) {
+		price = p;
+	}
+	
+	int getPrice() {
+		return price;
+	}
+	
+	void show() {
+		System.out.println("title : " + title);
+		System.out.println("author : " + author);
+		System.out.println("price : " + price);
+	}
+}
+
+public class Ex05_13_setter_getter {	// 실행 메서드를 가지고 있는 실행 클래스
+	public static void main(String[] args) throws Exception {
+		
+		Book bk1 = new Book();
+		// bk1.title = "자바";
+		bk1.setTitle("자바");
+		bk1.setAuthor("홍길동");
+		bk1.setPrice(3000);
+		System.out.println(bk1.getTitle());
+		System.out.println(bk1.getAuthor());
+		
+		System.out.println("------------------");
+		
+		Book bk2 = new Book();
+		bk2.setTitle("무엇");
+		bk2.setAuthor("송학관");
+		bk2.price = 100000;
+		System.out.println(bk2.getTitle());
+		System.out.println(bk2.getAuthor());
+	}
+}

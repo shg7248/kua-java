@@ -1,0 +1,14 @@
+package com.cos.song.hack;
+
+public class Song extends Hack{
+	
+	private Song() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

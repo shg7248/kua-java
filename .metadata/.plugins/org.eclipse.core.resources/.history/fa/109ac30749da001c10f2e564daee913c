@@ -1,0 +1,30 @@
+class Student {
+	
+	int kor;
+	int eng;
+	int math;
+	Calculator cal;
+	
+	Student(Calculator cal) {
+		this.cal = cal;
+	}
+	
+	public void calc() {
+		
+	}
+	
+}
+
+class Calculator {
+	public int add(int a, int b) {
+		return a + b;
+	}
+}
+
+public class Ex05_05_메서드 {
+	public static void main(String[] args) throws Exception { // 정의
+		
+		Student s = new Student(new Calculator);
+		
+	}
+}

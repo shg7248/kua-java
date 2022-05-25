@@ -1,0 +1,14 @@
+package com.cos.reflect.prac;
+
+import java.util.Comparator;
+
+public class Ex11_7 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Descending implements Comparator {
+	
+}
+

@@ -1,0 +1,13 @@
+'''
+Created on 2022. 5. 19.
+
+@author: admin
+'''
+
+class MyQueue:
+    def __init__(self):
+        self.input = []
+        self.output = []
+        
+    def push(self, x):
+        self.input.append(x)

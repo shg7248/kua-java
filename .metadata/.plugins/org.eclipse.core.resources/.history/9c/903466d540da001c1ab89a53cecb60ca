@@ -1,0 +1,24 @@
+
+class Calculator {
+	
+	int x;
+	int y;
+	
+	// 두 수의 덧셈을 리턴하는 add 메서드 정의
+	static int add(int a, int b) {
+		return a + b;
+	}
+}
+
+public class Ex05_04_메서드 {
+	public static void main(String[] args) throws Exception {
+		
+		Calculator cal = new Calculator();
+		cal.x = 100;
+		cal.y = 200;
+		
+		int result = cal.add(10, 20);
+		System.out.println("result = " + result);
+		
+	}
+}

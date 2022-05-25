@@ -1,0 +1,56 @@
+
+class Sports {
+	String name;
+	int inwon;
+	
+	Sports() {
+		name = "야구";
+		inwon = 9;
+	}
+	
+	Sports(String name, int inwon) {
+		this.name = name;
+		this.inwon = inwon;
+	}
+	
+	void display() {
+		System.out.println("name :" + name);
+		System.out.println("inwon : " + inwon);
+	}
+} //Sports
+
+class BaseBall extends Sports { // class 자식(하위)클래스 extends 부모(조상, 상위)
+
+	double ta;
+	
+	BaseBall(String name, int inwon, double ta) {
+		this.name = name;
+		this.inwon = inwon;
+		this.ta = ta;
+	}
+	
+	@Override
+	void display() {
+		System.out.println("name :" + name);
+		System.out.println("inwon : " + inwon);
+		System.out.println("ta : " + ta);
+	}
+	
+} // BaseBall
+
+public class Ex06_01_상속 {
+	public static void main(String[] args) {
+		
+		Sports s1 = new Sports();	// 야구, 9
+		Sports s2 = new Sports("축구", 11);
+		
+		// display 메서드로 한번에 출력
+		s1.display();
+		s2.display();
+		
+		System.out.println();
+		
+		BaseBall bb = new BaseBall("야구", 5, 0.345);
+		bb.display();
+	}
+}

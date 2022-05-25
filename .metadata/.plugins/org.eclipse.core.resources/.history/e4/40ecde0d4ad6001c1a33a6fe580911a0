@@ -1,0 +1,14 @@
+
+public class Ex02_03_증감 {
+	public static void main(String[] args) {
+	
+		int a = 5, b = 5, aa;
+		aa = ++a;
+		
+		// ++a : 먼저
+		// a++ : 나중에
+		
+		System.out.println("a:"+a);
+		System.out.println("aa:"+aa);
+	}
+}

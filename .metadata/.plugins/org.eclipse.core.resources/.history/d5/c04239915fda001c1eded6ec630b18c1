@@ -1,0 +1,22 @@
+
+class Var {
+	static int a = 0;
+	int b = 0;
+	void increment() {
+		int c = 0;
+		a++;
+		b++;
+		c++;
+		System.out.println("a:"+a);
+		System.out.println("b:"+a);
+		System.out.println("c:"+c);
+	}
+} // Var
+
+public class Ex05_07_변수 {
+	public static void main(String[] args) throws Exception { // 정의
+		
+		
+		
+	}
+}

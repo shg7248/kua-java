@@ -1,0 +1,13 @@
+
+public class Ex04_03 {
+	public static void main(String[] args) {
+		
+		int[] arr = {10,9,8};
+		int[] arr2 = new int[] {10,9,8};
+		int[] arr3 = new int[3];
+		arr3[0] = 10;
+		arr3[1] = 9;
+		arr3[2] = 8;
+		
+	}
+}

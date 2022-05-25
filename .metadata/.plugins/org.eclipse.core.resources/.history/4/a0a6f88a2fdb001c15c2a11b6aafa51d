@@ -1,0 +1,30 @@
+
+class Stu {
+	String name;
+	int kor;
+	int eng;
+	
+	Stu () { // default 생성자
+		
+	}
+	
+	Stu (String name) {	// 생성자가 만들어 졌다면 default 생성자는 만들어지지 않는다.
+		
+	}
+	
+	Stu (String name, int kor, int eng) {
+		
+	}
+}
+
+public class Ex05_17_객체배열 {
+	public static void main(String[] args) {
+		
+		int[] arr = {10, 20, 30};
+		
+		Stu s1 = new Stu();
+		Stu s2 = new Stu("수지");
+		Stu s3 = new Stu("수영", 60, 80);
+		
+	}
+}

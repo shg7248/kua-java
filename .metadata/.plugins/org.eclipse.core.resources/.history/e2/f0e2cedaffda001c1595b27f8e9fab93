@@ -1,0 +1,24 @@
+
+public class Ex05_12_overloading {
+	public static void main(String[] args) throws Exception { // 정의
+
+		int i = plus(3, 5, 10); 	// 메서드 호출
+		float f = plus(.1f, .2f);
+		float d = plus(1.1, 1.2);		
+		
+		System.out.println("int 합 : " + i);
+		System.out.println("float 합 : " + f);
+	}
+	
+	public static int plus(int a, int b, int c) {
+		return a + b + c;
+	}
+	
+	public static float plus(float a, float b) {
+		return a + b;
+	}
+	
+	public static double plus(double a, double b) {
+		return a + b;
+	}
+}

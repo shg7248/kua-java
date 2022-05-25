@@ -1,0 +1,12 @@
+package com.cos.reflect.prac;
+
+public class Ex11_7 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Descending implements Comparator {
+	
+}
+

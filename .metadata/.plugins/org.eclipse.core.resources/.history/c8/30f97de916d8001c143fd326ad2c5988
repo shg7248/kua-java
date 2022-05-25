@@ -1,0 +1,14 @@
+package com.cos.reflect.prac;
+
+import java.lang.reflect.Method;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Class person = Person.class;
+		
+		Method[] method = person.getDeclaredMethods();
+		
+		
+	}
+}
