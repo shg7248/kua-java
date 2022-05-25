@@ -1,8 +1,0 @@
-import java.util.Scanner;
-
-public class Ex03_04_switch_case {
-	public static void main(String[] args) {
-	
-
-	}
-}
