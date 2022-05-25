@@ -1,5 +1,5 @@
 
-// 저장됬냐
+// 저장 됬냐?
 
 class Person {
 	String name;
