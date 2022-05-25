@@ -2,6 +2,7 @@
 // 저장됬냐
 
 class Person {
+	
 	String name;
 	int age;
 	String addr;
@@ -65,6 +66,7 @@ public class Ex06_02_상속 {
 		Employee e = new Employee("송은이", 21, "제주", "MBC", "과장");
 		Student s = new Student("유재석", 87, "인천", "중앙고", 77);
 		
+		// show() 메서드 통해서 출력
 		p.show();
 		System.out.println();
 		e.show();
