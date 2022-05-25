@@ -1,6 +1,4 @@
 
-// 저장 됬냐?
-
 class Person {
 	String name;
 	int age;
