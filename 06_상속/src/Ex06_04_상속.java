@@ -81,6 +81,17 @@ public class Ex06_04_상속 {
 		System.out.println("title : " + b.getTitle());
 		System.out.println("author : " + b.getAuthor());
 	
+		System.out.println("===================================");
 		
+		Product[] pd = {
+				new Product("P01", "제조사"),
+				new Computer("Co2", "삼성", "window10", 64),
+				new Book("B03", "중앙출판사", "자바", "이무진")
+		};
+		
+		for(Product p2 : pd) {
+			p2.show();
+			System.out.println();
+		}
 	}
 }

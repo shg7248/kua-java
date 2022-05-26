@@ -73,5 +73,15 @@ public class Ex06_02_상속 {
 		System.out.println();
 		s.show();
 		
+		System.out.println("=======================================");
+		
+		Person[] person = 	{	new Person("강호동", 48, "부산"), 
+								new Employee("송은이", 21, "제주", "MBC", "과장"), 
+								new Student("유재석", 87, "인천", "중앙고", 77)};
+							
+		for(Person pp : person) {
+			pp.show();
+			System.out.println();
+		}
 	}
 }

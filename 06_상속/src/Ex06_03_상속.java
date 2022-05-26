@@ -71,5 +71,18 @@ public class Ex06_03_상속 {
 		e.show();	
 		System.out.println();
 		t.show();	
+		
+		System.out.println("==================================");
+		
+		Person2[] p2 = {
+				new Person2("강호동", 48),
+				new Employee2("송은이", 21, "MBC", "과장"),
+				new Teacher("아이유", 33, "서울고등학교", "부장교사", "음악")	
+		};
+		
+		for(Person2 pp : p2) {
+			pp.show();
+			System.out.println();
+		}
 	}
 }

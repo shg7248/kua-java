@@ -91,18 +91,28 @@ public class Ex06_01_상속 {
 		
 		System.out.println();
 		
-		BaseBall bb = new BaseBall("야구", 5, 0.345);
+		Sports bb = new BaseBall("야구", 5, 0.345);
 		bb.display(0);
 		
 		System.out.println();
 		
-		Football fb = new Football("축구", 7, 3);
+		Sports fb = new Football("축구", 7, 3);
 		fb.display(0);
 		
 		System.out.println();
 		
-		Basketball sb = new Basketball("농구", 5, 30);
+		Sports sb = new Basketball("농구", 5, 30);
 		sb.display(0);
+
+		System.out.println("================================");
+		
+		Sports[] arr = {new BaseBall("야구", 5, 0.345), new Football("축구", 7, 3), new Basketball("농구", 5, 30)};
+		
+		int i;
+		for(i = 0; i < arr.length; i++) {
+			arr[i].display(0);
+			System.out.println();
+		}
 	}
 }
 
