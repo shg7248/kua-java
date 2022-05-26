@@ -10,13 +10,27 @@ class Person {
 	}
 }
 
+class Sttu {
+	
+	Person p;
+	
+	Sttu() {
+		p.name = "Song";
+		System.out.println("이이름 : " + p.name);
+	}
+}
+
 public class Ex05_01_클래스 {
+	
+	Sttu sttu;
+	
 	public static void main(String[] args) {
 		
 //		String name="아이유";
 //		int a = 10;
 //		double b = 12.34;
 //		char c = 'X';
+		
 		Person p1 = new Person();	// p1은 참조변수 .. 저장공간은 어딘가에 따로 만들어지고 참조변수에 그 저장공간의 주소가 저장됨
 									// 객체(instance)를 만든다 = 저장 공간을 만든다
 		p1.name = "윤아";				// 참조변수.멤버변수
