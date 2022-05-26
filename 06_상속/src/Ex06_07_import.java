@@ -20,7 +20,7 @@ import com.javastudy.Car;
 // import java.lang.System;
 import java.util.*; // 클래스만 *로 대신 할 수 있다.
 // lang 패키지 안의 클래스들은 자주 사용하기 때문에 특별히 import를 하지 않고 사용할 수 있다.
-// package는 import 위에 있어야 한다.
+// package는 무조건 import 위에 있어야 한다.
 
 public class Ex06_07_import {
 	public static void main(String[] args) {
