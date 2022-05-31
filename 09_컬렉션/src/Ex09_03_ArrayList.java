@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class Person {
 	
@@ -26,6 +27,10 @@ class Person {
 		return this.pw;
 	}
 	
+	@Override
+	public String toString() {
+		return this.id + ":" + this.pw;
+	}
 }
 
 public class Ex09_03_ArrayList {
@@ -42,6 +47,30 @@ public class Ex09_03_ArrayList {
 		list.add(p3);
 		
 		System.out.println(list.size());
+		System.out.println(list);
+		System.out.println("-----");
 		
+		for(Person p : list) {
+			System.out.println("id : " + p.getId());
+			System.out.println("pw : " + p.getPw());
+			System.out.println();
+		}
+		System.out.println("-----");
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("id 입력 : ");
+		String id = sc.next();
+		
+		boolean find = false;
+		for(Person p : list) {
+			if(p.getId().equals(id)) {
+				System.out.println("비밀번호는 " + p.getPw() + "입니다.");
+				find = !find;
+				break;
+			}
+		}
+		if(!find) {
+			System.out.println("없는 아이디 입니다.");
+		}
 	}
 }
