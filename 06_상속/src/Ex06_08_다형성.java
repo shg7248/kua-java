@@ -49,12 +49,13 @@ public class Ex06_08_다형성 {
 		System.out.println(f.door);
 		System.out.println(f.color);
 		
-		c = f; // Car2 c = new FireEngine(); 	// 다형성 : 하나의 참조변수로 여러 타입의 객체를 참조할 수 있는 것 c = (Car2)f;
+		c = f; // Car2 c = new FireEngine(); 	// 다형성 : 여러가지 형태를 가질 수 있는 성질, 하나의 참조변수로 여러 타입의 객체를 참조할 수 있는 것 c = (Car2)f;
 		System.out.println(c.door);
 		System.out.println(c.color);
 //		System.out.println(c.wheel);			// 부모 클래스인 Car2에는 wheel이라는 멤버변수가 없기 때문에 에러가 발생함
 		
 		c.drive();								// 자식이 오버라이딩을 하지 않을 경우 부모 클래스에 있는 메서드를 사용함
+//		c.water();								// 
 		
 		if(c instanceof FireEngine) {
 			System.out.println("다운캐스팅 가능");
