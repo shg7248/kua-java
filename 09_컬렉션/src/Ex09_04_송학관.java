@@ -66,9 +66,8 @@ public class Ex09_04_송학관 {
 		System.out.println(arr);
 		
 		while(true) {
-			String t = null;
 			System.out.print("찾는 제목 입력 : ");
-			t = sc.next();
+			String t = sc.next();
 			
 			boolean find  = false;
 			for(Music mm : arr) {

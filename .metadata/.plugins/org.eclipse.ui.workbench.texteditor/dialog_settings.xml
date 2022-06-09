@@ -5,13 +5,15 @@
 		<item key="DIALOG_Y_ORIGIN" value="396"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="equals"/>
+		<item key="selection" value="DEFAULT_CAPACITY"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="DEFAULT_CAPACITY"/>
+			<item value="DEFAULTCAPACITY_EMPTY_ELEMENTDATA"/>
 			<item value="equals"/>
 			<item value="equlas"/>
 			<item value="Object"/>

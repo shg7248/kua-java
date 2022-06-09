@@ -1,8 +1,0 @@
-
-public class Ex05_18_객체배열 {
-	public static void main(String[] args) {
-		
-		// Book객체 종류별로 3개를 배열로 생성
-		
-	}
-}

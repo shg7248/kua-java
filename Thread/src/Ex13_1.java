@@ -1,32 +1,49 @@
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.io.PrintStream;
+
+import javax.xml.crypto.Data;
 
 public class Ex13_1 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		
-		ThreadEx1_1 t1 = new ThreadEx1_1();
+		FileInputStream fis = new FileInputStream(new File("C:\\Users\\admin\\Downloads\\Test05_송학관.java"));
 		
-		Runnable r = new ThreadEx1_2();
-		Thread t2 = new Thread(r);
+		int i = fis.read();
 		
-		t1.start();
-		t2.start();
+		PrintStream ps = new PrintStream("C:\\Users\\admin\\Desktop\\ttt.txt", "utf-8");
+		ps.write('0');
+		
+		System.out.println("1");
+		
+//		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:\\Users\\admin\\Desktop\\object.txt"));
+		
+		int b;
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		while((b = fis.read() ) != -1) {
+			baos.write(b);
+		}
+		
+		byte[] bs = baos.toByteArray();
+		System.out.printf("%.2f", bs.length / 1024f);
+		
+		System.out.println();
+		
+		byte[] bf = {'a', 'b', 'c', 'd'};
+		ByteArrayInputStream bais = new ByteArrayInputStream(bf);
 		
 	}
-}
-
-class ThreadEx1_1 extends Thread {
-	public void run() {
-		for(int i = 0; i < 5; i++) {
-			System.out.println(getName());
+	
+	class Student {
+		String name;
+		int age;
+		
+		public Student(String name, int age) {
+			this.name = name;
+			this.age = age;
 		}
 	}
-}
-
-class ThreadEx1_2 implements Runnable {
-
-	@Override
-	public void run() {
-		for(int i=0; i < 5; i++) {
-			System.out.println(Thread.currentThread().getName());
-		}
-	}	
 }

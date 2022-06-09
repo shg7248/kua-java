@@ -1,9 +1,0 @@
-package com.cos.song.hack;
-
-public class Song {
-	public static void main(String[] args) {
-		
-		
-		
-	}
-}

@@ -66,6 +66,34 @@ public class Lotto {
 		}
 		
 		int count = 0;
+		for(int l1 : comLotto) {
+			for(int l2 : lotto) {
+				if(l1 == l2) {
+					count++;
+				}
+			}
+		}
 		
+		System.out.println();
+		System.out.println("맞은 갯수 : " + count);
+		
+		switch(count) {
+		case 6:
+			System.out.println("1등");
+			break;
+		case 5:
+			System.out.println("3등");
+			break;
+		case 4:
+			System.out.println("4등");
+			break;
+		case 3:
+			System.out.println("5등");
+			break;
+		case 2:
+		case 1:
+		case 0:
+			System.out.println("꽝!!");
+		}
 	}
 }
