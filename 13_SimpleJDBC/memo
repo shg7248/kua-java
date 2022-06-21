@@ -1,0 +1,56 @@
+CREATE TABLE DBTEST(
+	NUM NUMBER,
+	NAME VARCHAR2(10),
+	ADDR VARCHAR2(10)
+);
+
+INSERT INTO DBTEST
+VALUES (1, 'kim', '서울');
+
+INSERT INTO DBTEST
+VALUES (1, 'kim', '서울');
+
+INSERT INTO DBTEST
+VALUES (1, 'kim', '서울');
+
+INSERT INTO DBTEST
+VALUES (4, 'jung', '광주');
+
+COMMIT;
+SELECT * FROM DBTEST;
+
+-----------------------
+
+DROP SEQUENCE PERSEQ;
+CREATE SEQUENCE PERSEQ
+INCREMENT BY 1
+START WITH 1
+MINVALUE 1;
+
+DROP TABLE PERSON;
+CREATE TABLE PERSON(
+	NUM NUMBER PRIMARY KEY,
+	NAME VARCHAR2(20),
+	AGE NUMBER,
+	GENDER VARCHAR2(10),
+	BIRTH DATE DEFAULT SYSDATE
+);
+
+INSERT INTO PERSON VALUES(PERSEQ.NEXTVAL, '슈가', 23, '남', '1992/3/4');
+INSERT INTO PERSON VALUES(PERSEQ.NEXTVAL, '아이유', 33, '여', DEFAULT);
+INSERT INTO PERSON VALUES(PERSEQ.NEXTVAL, '제니', 44, '여', '1971/09/22');
+INSERT INTO PERSON VALUES(PERSEQ.NEXTVAL, '싸이', 20, '남', DEFAULT);
+
+DAO(Data Access Objects)
+- DB를 사용해 데이터를 조회하거나 조작을 전담하는 오브젝트
+- DB와의 연결을 담당한다.
+- 저장소(테이블)에 데이터를 입력, 조회, 수정, 삭제 등의 처리를 한다.
+
+DTO(Data Transfer Object)
+- 데이터의 전달을 위해 만드는 오브젝트
+- 데이터를 담을 private 변수와 
+	그 변수를 조작할 수 있는 getter, setter 메서드로 구성한다.
+- bean 또는 VO(Value Object)라고도 한다.
+
+
+

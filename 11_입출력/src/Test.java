@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Arrays;
 
 public class Test {
 	public static void main(String[] args) {
@@ -29,14 +30,26 @@ public class Test {
 //		
 //		System.out.println(new String("\uc990"));
 		
-		try {
-			ServerSocket server = new ServerSocket(10000);
-			Socket socket = server.accept();
-			System.out.println(socket);
-			
-		} catch (IOException e) {
-			e.printStackTrace();
+//		try {
+//			ServerSocket server = new ServerSocket(10000);
+//			Socket socket = server.accept();
+//			System.out.println(socket);
+//			
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+		
+		int[] arr = new int[4];
+		arr[0] = 1;
+		arr[1] = 2;
+		arr[2] = 3;
+		arr[3] = 4;
+		int[] copy = Arrays.copyOf(arr, 8);
+		for(int a : copy) {
+			System.out.println(a);
 		}
+		System.out.println(copy);
+		System.out.println(arr);
 		
 
 		
